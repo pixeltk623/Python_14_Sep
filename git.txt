@@ -1,1 +1,8 @@
-git cmd
+1. git status
+2. git pull
+3. git add . => All file
+4. git add "file Name"
+	git add "test.txt"
+5. git commit -m "Done"
+
+6. git push
