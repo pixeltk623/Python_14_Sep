@@ -1,1 +1,7 @@
 Test
+1. git status 
+2. git pull
+3. git add "file name"
+4. git add "test.txt"
+5. git commit -m "Done"
+6. git push
