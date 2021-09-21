@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+
+
+
+
+	<!-- <button type="button">Test</button>
+	<input type="submit" name="">
+	<input type="submit" name="">
+	<button type="submit">Test</button> -->
+
+	<!-- readonly disabled multiple size="2" -->
+
+	<fieldset>
+		<legend>Registration Form</legend>
+	<form method="POST" action="" enctype="multipart/form-data">
+
+		<progress value="50" max="100"></progress>
+		<br><br>
+		<label>Choose a flavor:</label>
+		<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+		<datalist id="ice-cream-flavors">
+		    <option value="Chocolate">
+		    <option value="Coconut">
+		    <option value="Mint">
+		    <option value="Strawberry">
+		    <option value="Vanilla">
+		</datalist>
+
+		<br><br>
+
+		<label>Name</label>
+		<input type="text" name="name" value="Sharvan" placeholder="Enter Your Name" autocomplete="off" required >
+		<br><br>
+
+		<label>Email</label>
+
+		<input type="email" name="email" required>
+
+		<br><br>
+
+		<label>Color</label>
+		<input type="color" name="">
+
+		<br><br>
+		<label>Qty</label>
+
+		<input type="number" name="Qty">
+
+		<br><br>
+
+		<label>Search</label>
+		<input type="search" name="">
+
+		<br><br>
+
+		<label>Range</label>
+		<input type="range" name="" value="20" min="10" max="20">
+
+		<br><br>
+		<label>Gender</label>
+
+		<input type="radio" name="gender" value="Male" checked>Male
+		<input type="radio" name="gender" value="Female">Female
+
+		<br><br>
+
+		<label>Hobby</label>
+
+		<input type="checkbox" name="hobby" value="Cricket" checked>Cricket
+		<input type="checkbox" name="hobby" value="Cricket" checked>Cricket
+		<input type="checkbox" name="hobby" value="Cricket">Cricket
+		<input type="checkbox" name="hobby" value="Cricket">Cricket
+		<input type="checkbox" name="hobby" value="Cricket">Cricket
+
+		<br><br>
+
+		<label>City</label>
+		<select name="city" >
+			<option value="">Select</option>
+			<option value="Vadodara">Vadodara</option>
+			<option value="Bharuch">Bharuch</option>
+			<option value="Surat">Surat</option>
+			<option value="Anand">Anand</option>
+		</select>
+
+		<br><br>
+		<label>Address</label>
+
+		<textarea cols="" rows=""></textarea>
+		<br><br>
+
+		<label>Date</label>
+		<input type="date" name="" min="2021-09-01" max="2021-09-21">
+		<br><br>
+
+		<label>Date & Time</label>
+		<input type="datetime-local" name="">
+		<br><br>
+
+		<label>Time</label>
+
+		<input type="time" name="">
+		<br><br>
+
+		<label>Time</label>
+
+		<input type="month" name="">
+		<br><br>
+
+
+		<label>Week</label>
+
+		<input type="week" name="">
+		<br><br>
+
+		<label>Profile Pic</label>
+
+		<input type="file" name="" multiple>
+
+		<br><br>
+		<input type="submit" name="">
+		<input type="reset" name="">
+	</form>
+</fieldset>
+</body>
+</html>
