@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FORM</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: lavender;
+            padding: 20px;
+        }
+        .col-left{
+            width: 25%;
+            float: left;
+        }
+        .col-right{
+            width: 75%;
+            float: left;
+        }
+        label{
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+	    }
+        input[type=text],select{
+            width: 100%;
+            padding: 10px;  
+            margin: 10px;
+             
+        }
+        textarea{
+            width: 100%;
+            padding: 10px;
+            height: 200px;
+            margin: 10px;
+           resize: vertical ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Form</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-left">
+                <label>First Name</label>
+            </div>
+            <div class="col-right">
+                <input type="text" name="" id="">
+            </div>
+            <div class="col-left">
+                <label>Last Name</label>
+            </div>
+            <div class="col-right">
+                <input type="text" name="" id="">
+            </div>
+            <div class="col-left">
+                <label>Country</label>
+            </div>
+            <div class="col-right">
+                <select name="" id="">
+                    <option value="">India</option>
+                    <option value="">USA</option>
+                    <option value="">UK</option>
+                </select>
+            </div>
+            <div class="col-left">
+                <label>Subject</label>
+            </div>
+            <div class="col-right">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
