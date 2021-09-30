@@ -1,19 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>website layout</title>
-    
+	<title>demo</title>
+
 <style type="text/css">
-
-
-*{
-            font-family: Arial; 
-            box-sizing: border-box;
-        }
-
-
 
 header{
 
@@ -39,14 +29,14 @@ ul {
 			margin: 0;
 		}
 
-		ul li {
+
+ul li {
 			float: left;
 		}
 
 		ul li.right{
 			float: right;
 		}
-
 
 
 
@@ -62,7 +52,7 @@ ul {
 			background-color: grey;
 		}
 
-      .col-left{
+ .col-left{
             width: 80%;
            float: left;  
         }
@@ -72,6 +62,7 @@ ul {
             width: 20%;
             float: left;
         }
+
 
 
 .card-left{
@@ -87,6 +78,7 @@ ul {
             padding: 13px;
             margin: 5px;
         }
+
 
 
 .blank-img-left{
@@ -105,16 +97,12 @@ ul {
             height: 100px;
         }
 
-
-
-
 .layout::after{
             content: "";
             display: table;
             clear: both;
         }
-
-footer{
+        footer{
             width: 100%;
             background-color: lightgrey;
             text-align: center;
@@ -129,13 +117,27 @@ footer{
 
 
 
-        @media screen and (min-width: 300px ) and ( max-width: 480px )
+footer{
+            width: 100%;
+            background-color: lightgrey;
+            text-align: center;
+            padding: 18px;
+            margin: 5px;
+        }
+
+
+       footer h3{
+            font-size: 25px;
+        }
+
+           @media screen and (min-width: 300px ) and ( max-width: 480px )
          {
             
             ul li{
                 float: none;
                 text-align: center;
-            }
+
+                    }
 
             ul li.right{
                 float: none;
@@ -150,20 +152,23 @@ footer{
                 width: 100%;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-</style>
+    </style>
 </head>
-<body  style="background-color: lightgrey;">
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -183,7 +188,6 @@ footer{
 
 
 </ul>
-
 
 <div class="layout">
         <div class="col-left">
@@ -242,15 +246,14 @@ footer{
          </div>
 
 
-       <footer>
-        <h3>Footer</h3>
-      </footer>
 
 </div>
 
 
 
-    
+ <footer>
+      	<h3>Footer</h3>
+      </footer>
 
 
 </body>

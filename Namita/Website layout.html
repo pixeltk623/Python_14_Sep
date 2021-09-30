@@ -1,0 +1,207 @@
+<!DOCTYPE>
+<html>
+<head>
+        <title>Wesite CSS Layout</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+	<style type="text/css">
+
+
+		* {
+		box-sizing: border-box;
+		font-family: Arial;
+	}
+
+	 body {
+	 	background-color: grey;
+	 }
+
+	 header{
+	 	text-align: center;
+	 	background-color: white;
+	 	padding: 10px;
+	 	margin: 5px 5px 0px 5px;
+	 }
+	 header h1{
+	 	font-size: 50px;
+	 }
+	
+	 
+	 
+		ul {
+			background-color: black;
+			list-style-type:none;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+		}
+
+		ul li {
+			float: left;
+		}
+
+		ul li a {
+			text-decoration: none;
+			display: inline-block;
+			padding: 10px 20px;
+		    color: white;
+		    font-size: 25px;
+			
+		}
+
+		ul li a:hover {
+			background-color: grey;
+		}
+		.col-left{
+			width: 80%;
+			float: left;
+
+		}
+		.col-right{
+			width:20%;
+			float:left;
+		}
+
+	
+	.block-left{
+		background-color: white;
+		padding: 13px;
+		margin:5px;
+
+	}
+	.block-right{
+		background-color: white;
+		padding: 13px;
+		margin: 5px;
+
+	}
+
+	.image-left{
+		height: 200px;
+		background-color: grey;
+		padding: 10px;
+		width: 100%;
+
+	}
+	.image-right{
+		height: 100px;
+		background-color: grey;
+		padding: 10px;
+		width: 100%;
+	}
+
+.row::after {
+
+		content="";
+		display:table;
+		clear:both;
+	}
+
+	footer{
+
+         width:100%;
+		background-color: lightgrey;
+		text-align: center;
+		padding: 18px;
+		margin: 5px;
+		
+   }
+
+	footer h3{
+
+		font-size: 25px;
+	}
+
+
+	@media screen and (min-width: 300px) and (max-width: 480px){
+
+		ul li{
+			float: none;
+			text-align: center;
+ }
+
+            ul li.right{
+                float: none;
+                text-align: center;
+            }
+
+	.col-left{
+     width: 100%;
+}
+    .col-right{
+	width: 100%
+	}
+}
+
+
+</style>
+</head>
+<body>
+		
+		<header>
+		<h1> My Website</h1>
+		<p>Resize the border of the window to see the effect</p>
+	</header>
+	<ul>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li style="float: right;"><a href="">Link</a>
+	</li>
+	</ul>
+
+	<div class="row">
+		<div class="col-left">
+			<div class="block-left">
+				<h3>TITLE HEADING</h3>
+				<h5>Title discription , Dec 7, 2017</h5>
+				<div class="image-left">Image</div>
+
+				<p>Some text...</p>
+				<p>To me, this overhead view of time gives a profound perspective - that we are living inside the hot flash of the Big Bang, the perfect moment to soak in the sights and sounds of a universe in its glory days, before it all fades away.  Although the end will eventually come, we have a practical infinity of time to play with if we play our cards right. The future may look bleak, but we have enormous potential as a species.
+				</p>
+			</div>
+
+			<div class="block-left">
+				<h3>TITLE HEADING</h3>
+				<h5>Title discription , Dec 7, 2017</h5>
+				<div class="image-left">Image</div>
+				<p>Some text...</p>
+				<p>To me, this overhead view of time gives a profound perspective - that we are living inside the hot flash of the Big Bang, the perfect moment to soak in the sights and sounds of a universe in its glory days, before it all fades away.  Although the end will eventually come, we have a practical infinity of time to play with if we play our cards right. The future may look bleak, but we have enormous potential as a species.</p>
+			</div>
+		</div>
+
+		<div class="col-right">
+			<div class="block-right">
+			<h3>About Me</h3>
+			<div class="image-right">Image</div>
+			<p>Some text about me </p>
+			</div>
+
+			<div class="block-right">
+			<div class="image-right">Image</div>
+			<div class="image-right">Image</div>
+			<div class="image-right">Image</div>
+			</div>
+
+			<div class="block-right">
+			<h3>Follow me</h3>
+			<p>Some text..</p>
+		
+		     </div>
+			
+             </div>
+
+             </div>
+
+			 
+<div>
+            <footer>
+			<h3>Footer</h3>
+			</footer> 
+		</div>
+</body>
+
+</html>
