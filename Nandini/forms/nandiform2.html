@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>form 2</title>
+
+<style type="text/css">
+	
+div.body{
+
+            width: 500px;
+            margin-left: 400px;
+            padding: 10px ;
+            background-color: white;
+            text-align: center;   
+            border-style: solid;
+            border-color:black ;     
+    }
+
+</style>
+
+
+
+
+</head>
+<body>
+
+<div class="body">
+     <h1 align="center">Novell Servies Login</h1>  
+    <form method="POST" action="">
+
+<label>Username:</label>
+<input type="text" name="name">
+<br><br>
+
+<label>Password:</label>
+<input type="text" name="password">
+<br><br>
+
+
+<label>City of Employment:</label>
+<input type="text" name="City">
+<br><br>
+
+<label>Web Server:</label>
+
+<select name="webS">
+
+            <option value="">--choose a server--</option>
+			<option value="S1">S1</option>
+			<option value="S2">S2</option>
+			<option value="S3">S3</option>
+			<option value="S4">S4</option>
+
+
+
+
+</select>
+<br><br>
+
+
+<label>Please specify your role:</label>
+
+		<input type="radio" name="role" value="Admin" >Admin <br>
+		<input type="radio" name="role" value="Engineer">Engineer<br>
+        <input type="radio" name="role" value="Manager">Manager<br>
+        <input type="radio" name="role" value="Guest">Guest
+<br><br>
+
+<label>Sign out following</label>
+
+		<input type="checkbox" name="signout" value="mail">mail<br>
+		<input type="checkbox" name="signout" value="payroll">payroll<br>
+	 	<input type="checkbox" name="signout" value="self service">self service
+		
+		<br><br>
+
+
+
+         <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+
+</form>
+</div>
+</body>
+</html>
