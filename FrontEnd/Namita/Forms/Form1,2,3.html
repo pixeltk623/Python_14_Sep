@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HTML forms</title>
+</head>
+<body>
+	<h1>Form1</h1>
+	
+		<form>
+
+		Name:<input type="text" name="name"><br><br>
+
+		Password:<input type="text" name="pwd"><br><br>
+
+		Gender: 
+        <label>Male<input type="radio" name="gender" value="male"></label>
+		<label>Female<input type="radio" name="gender" value="female"></label><br><br>
+
+		<label>Email:<input type="text" name="email"></label><br><br>
+
+		<label>Phone No:</label><select id="phone no:" name="phone">
+			<option>977</option>
+			<option>877</option>
+		</select><label>
+			<input type="text" name=""></label>
+		<br><br>
+		<input type="submit" name="submit">
+
+		
+	</form>
+	<br><br><br>
+	<body>
+<h1>Form2</h1>
+
+<form>
+	<div>
+<label>Field 1 
+
+		<label><input type="text" name="field1" value="text1"></label>
+
+<label for="Field 2">Field 2</label>
+<br>
+<label><input type="text" name="" value="text2"></label>
+	
+	<br>
+	<br>
+
+	<label>Field 3</label>
+	<br>
+ <label> <select>
+		<option>Combo1</option>
+		<option>Combo2</option>
+		<option>Combo3</option>
+	</select></label>
+<br>
+<br>
+
+	<label>Field 4</label>
+<br>
+	<label><input type="text" name="field 4" value="text3"></label>
+<br>
+<br>
+	<label>Field 5</label>
+<br>
+<label><input type="text" name="field 5" value="text4"></label>
+<br>
+<br>
+
+	<labe>Field 6</label>
+<br>
+	<label><input type="textarea" name="" value="TextArea1"></label>
+<br>
+<br>
+<label>
+<button>OK</button>
+<button>Cancel</button></label>
+</form>
+<br><br><br>
+<body>
+ <h1>Form3</h1>
+<style>
+table td,button{
+    text-align:left;
+}
+</style>
+
+
+<table border="grey", width="40%" >
+	<tr>
+		<th bgcolor="violet">Name</th>
+		<th bgcolor="violet">Value</th>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td >Sex</td>
+		<td><label>Male <input type="radio" name="male"></label><br>
+			<label>Female</label><input type="radio" name="female"></td>
+	</tr>
+
+	<tr>
+		<td>Eye Color</td>
+		<td><select id="color" name="color">
+			<option>green</option>
+			<option>blue</option>
+			<option>red</option>
+			<option>yellow</option>
+			<option>orange</option>
+			<option>grey</option>
+		</select></td>
+	</tr>
+
+	<tr>
+		<td >Check all that apply</td>
+		<td > <input type="checkbox" id="feet" name="height" value="tall">
+  <label for="feet">Over 6 feet tall</label><br>
+  <input type="checkbox" id="feet" name="height1" value="tall">
+  <label for="feet">Over 200 Pounds</label></td>
+</tr>
+
+	<tr>
+		<td colspan="2">Describe your atheletic ability:<br>
+		 <textarea cols="80" rows="4"></textarea></td>
+		</tr>
+
+	<tr>
+		<td colspan="2" ><button type="button">Enter my information</button> </td>
+			</tr>
+		</table>
+
+
+	</div>
+</div>
+</body>
+<br><br><br>
+<body>
+<h1>Form4</h1>
+ <table align="left" border="0" >
+      <tr align="center" valign="top"> 
+        <td> 
+          <p align="center"><font size="5">Novell Services Login
+             </font></p> 
+          <table align="center" border="0"> 
+ 
+            <tr> 
+              <td>Username:</td> 
+              <td><input type="text" name="username" size="30"></td> 
+            </tr> 
+ 
+            <tr> 
+              <td>Password:</td> 
+              <td><input type="password" name="password" size="30">
+              </td> 
+            </tr> 
+ 
+            <tr align="right"> 
+              <td>City of<br>Employment:</td> 
+              <td><input type="text" name="city" size="30"></td> 
+            </tr> 
+ 
+            <tr align="right"> 
+              <td>Web server:</td> 
+              <td> 
+                <select name="webserv" size="1"> 
+                  <option value="default" selected> 
+                    --- Choose a server --- 
+                  </option> 
+                  <option value="Python Tutorial"> 
+                    Python Tutorial
+                  </option> 
+                  <option value=" web Development"> 
+                    web Development 
+                  </option> 
+                  <option value="pyschology"> 
+                    pyschology
+                  </option> 
+                  <option value="Marketing & sales"> 
+                   Marketing & Sales 
+                  </option> 
+                </select> 
+              </td> 
+            </tr> 
+ 
+            <tr> 
+              <td colspan="2" align="left" height="25" valign="top"> 
+                <p></p> 
+              </td> 
+            </tr> 
+ 
+            <tr align="right"> 
+              <td>Please specify<br>your role:</td> 
+              <td> 
+                 <input name="role" value="admin" type="radio">
+                        Admin<br> 
+                 <input name="role" value="engineer" type="radio">
+                       Engineer<br> 
+                 <input name="role" value="manager" type="radio">
+                       Manager<br> 
+                 <input name="role" value="guest" type="radio">Guest 
+              </td> 
+            </tr> 
+ 
+            <tr> 
+              <td colspan="2" align="left" height="25" valign="top"
+                  width="121"> 
+                <p></p> 
+              </td> 
+            </tr> 
+ 
+            <tr align="right"> 
+              <td>Single Sign-on<br>to the following:</td> 
+              <td> 
+                <input name="mail" type="checkbox">Mail<br> 
+                <input name="payroll" type="checkbox">Payroll<br> 
+                <input name="selfservice" type="checkbox">
+                             Self-service<br> 
+              </td> 
+            </tr> 
+          </table> 
+        </td> 
+      </tr> 
+ 
+      <tr> 
+        <td colspan="2" align="center"> 
+          <input value="Login" type="submit"> 
+          <input type="reset"> 
+        </td> 
+      </tr> 
+    </table> 
+  </form> 
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<body>
+<h1>Form 5</h1>
+<style>
+
+.container {
+	padding: 20px;
+	background-color:lightgrey;
+	margin: auto;
+	margin-top: 20px;
+	line-height: 30px;
+	width: 500px;
+}
+
+.title {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.container span {
+	margin-top: 10px;
+	padding-left: 40px;
+	display: inline-block;
+	width: 30%;
+}
+
+.container input {
+	min-height: 25px;
+	display: inline-block;
+	width: 50%;
+}
+
+#gender input {
+	min-height: inherit;
+}
+
+.container textarea {
+	display: inline-block;
+	margin-top: 10px;
+	width: 50%;
+}
+
+#gender input {
+	width: auto;
+}
+
+#submit,
+#reset {
+	display: inline-block;
+	width: auto;
+	margin-top: 10px;
+	margin-left: 40%;
+}
+
+#reset {
+	margin-left: 10%;
+}
+</style>
+<div class="container">
+		<h2 class="title">Registration form</h2>
+    <form>
+        <div id="fname"> <span>First Name</span>
+          <input type="text"> </div>
+        <div id="lname"> <span>Last Name</span>
+          <input type="text"> </div>
+        <div id="nname"> <span>Nick Name</span>
+          <input type="text"> </div>
+        <div id="email"> <span>e-mail</span>
+          <input type="text"> </div>
+        <div id="pass"> <span>Password</span>
+          <input type="text"> </div>
+        <div id="dob"> <span>Date of Birth</span>
+          <input type="text"> </div>
+        <div id="gender"> <span>Gender</span>
+          <input type="radio" name="gender">Male
+          <input type="radio" name="gender">Female
+          <input type="radio" name="gender">Others</div>
+        <div id="mobile"> <span>Mobile</span>
+          <input type="text"> </div>
+        <div id="address"> <span>Address</span>
+          <textarea rows="5"></textarea>
+        </div>
+        <input type="button" id="submit" value="submit">
+        <input type="button" id="reset" value="reset">
+    </form>
+</div>
+
+<br><br>
+<h1>Form6</h1>
+<br>
+
+
+<form align="center">
+ 
+<h3 style="color:blue">Personal Details</h3>
+Name:
+<input type="text" name="name" id="name"><br><br>
+Password:
+<input type="password" name="password" id="password"><br><br>
+ 
+E-mail id: <input type="text" name="name" id="name"><br><br>
+Gender: <input type="radio" name="radiogroup1" value="radio" id="radiogroup1"> 
+Male
+<input type="radio" name="radiogroup1" value="radio" id="radiogroup2">
+ Female<br><br>
+Contact#: <input type="text" name="mobile" id="mobile">
+ 
+<h3 style="color:blue">Educational Qualification</h3>
+ 
+Degree: <select> 
+        <option>-- Select Group --</option>
+        <option>B.Com</option>
+        <option>B.sc</option>
+        <option>B.com Computers</option>
+        <option>B.A</option>
+      </select><br>
+      <br>
+Engineering: <select >
+        <option>-- Select Group --</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>CIVIL</option>
+        <option>EEE</option>
+      </select><br><br>
+Hobbies: <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1">
+Playing chess
+<input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup2">
+Reading Books<br><br>
+<h3 style="color:blue">Address</h3>
+<textarea name="textarea" cols="35" rows="5" id="textarea"></textarea><br>
+<br>
+Attch Resume: <input type="file" name="fileField" id="fileField"><br><br>
+ 
+<input type="image" src="/D:/HD Wallpapers/button.jpg">
+</form>
+</body>
+</html>
+	
+	

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>website layout</title>
+    
+<style type="text/css">
+
+
+*{
+            font-family: Arial; 
+            box-sizing: border-box;
+        }
+
+
+
+header{
+
+            text-align: center;
+			background-color: white;
+			padding: 15px;
+			margin: 5px 5px 0px 5p
+
+}
+
+header h1{
+
+
+font-size: 50px;
+
+}
+
+ul {
+			background-color: black;
+			list-style-type: none;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+		}
+
+		ul li {
+			float: left;
+		}
+
+		ul li.right{
+			float: right;
+		}
+
+
+
+
+		ul li a {
+			text-decoration: none;
+			display: inline-block;
+			padding: 20px 25px;
+			color: white;
+			font-size: 17px;
+		}
+
+		ul li a:hover {
+			background-color: grey;
+		}
+
+      .col-left{
+            width: 80%;
+           float: left;  
+        }
+
+
+        .col-right{
+            width: 20%;
+            float: left;
+        }
+
+
+.card-left{
+            background-color: white;
+            padding: 13px;
+            margin: 5px;
+        }
+
+
+
+ .card-right{
+            background-color: white;
+            padding: 13px;
+            margin: 5px;
+        }
+
+
+.blank-img-left{
+            width: 100%;
+            background-color: grey;
+            padding: 10px;
+            height: 200px;
+        }
+
+
+
+        .blank-img-right{
+            width: 100%;
+            background-color: grey;
+            padding: 10px;
+            height: 100px;
+        }
+
+
+
+
+.layout::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+footer{
+            width: 100%;
+            background-color: lightgrey;
+            text-align: center;
+            padding: 18px;
+            margin: 5px;
+        }
+
+
+       footer h3{
+            font-size: 25px;
+        }
+
+
+
+        @media screen and (min-width: 300px ) and ( max-width: 480px )
+         {
+            
+            ul li{
+                float: none;
+                text-align: center;
+            }
+
+            ul li.right{
+                float: none;
+                text-align: center;
+            }
+
+            .col-left{
+                width: 100%;
+            }
+
+            .col-right{
+                width: 100%;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body  style="background-color: lightgrey;">
+
+
+
+<header>
+
+<h1 >My Website</h1>
+<p >Resize the browser window to see the effect.</p>
+
+</header>
+
+<ul>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li class="right"><a href="">Link</a></li>
+
+
+
+</ul>
+
+
+<div class="layout">
+        <div class="col-left">
+            <div class="card-left">
+                <h3>TITLE HEADING</h3>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="blank-img-left"> Image</div>
+                   
+               
+                <p>Some text..
+                    <br><br>
+                    Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+       
+
+
+        <div class="card-left">
+                <h3>TITLE HEADING</h3>
+                <h5>Title description, Dec 7, 2017</h5>
+                <div class="blank-img-left"> Image</div>
+                   
+               
+                <p>Some text..
+                    <br><br>
+                    Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+    
+    </div>
+
+<div class="col-right">
+            <div class="card-right">
+                <h3>About Me</h3>
+                <div class="blank-img-right">Image</div>
+             
+                
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+
+
+            <div class="card-right">
+            	 <div class="blank-img-right">Image</div>
+            	  <div class="blank-img-right">Image</div>
+            	   <div class="blank-img-right">Image</div>
+
+               </div>
+                      <div class="card-right">
+                      <h3>Follow me</h3>
+                       <p>Some text..</p>
+                      </div>
+
+
+         </div>
+
+
+       <footer>
+        <h3>Footer</h3>
+      </footer>
+
+</div>
+
+
+
+    
+
+
+</body>
+</html>

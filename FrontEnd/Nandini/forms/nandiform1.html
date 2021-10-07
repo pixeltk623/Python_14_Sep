@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<title> form 1</title>
+<style type="text/css">
+	
+div.body{
+
+            width: 500px;
+            margin-left: 500px;
+            padding: 10px ;
+            background-color: lightblue;
+            text-align: center;
+            border-style: solid;
+            border-color:black ;     
+    }
+
+
+ h1{
+        text-align: center;
+    }
+
+
+
+.col-left {
+		width: 25%;
+		float: left;
+	}
+	.col-right {
+		width: 75%;
+		float: left;
+	}
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+		
+
+<div class="body">
+     <u><h1>Registration Form</h1></u>  
+    <form method="POST" action="">
+
+  <div  class="row">
+			<div class="col-left">
+             <label>First Name</label>
+             </div>
+
+             <div class="col-right">
+            <input type="text" name="fname"  placeholder="Enter Your Name" required>
+            </div>
+</div>
+		
+   <div  class="row">
+			 <div class="col-left">
+             <label>Last Name</label>
+             </div>
+                         <div class="col-right">
+                         <input type="text" name="lname"  placeholder="Enter Your Name" required>
+                         </div>
+	</div>	
+
+	 <div  class="row">
+			 <div class="col-left">
+            <label>Nick Name</label>
+            </div>
+ <div class="col-right">           
+<input type="text" name="nname"  >
+</div>	
+</div>
+
+
+
+ <div  class="row">
+			 <div class="col-left">
+
+	<label>Email</label>
+</div>
+
+
+ <div class="col-right">  
+		<input type="email" name="email" required>
+</div>
+</div>
+
+
+
+<div  class="row">
+			 <div class="col-left">
+	<label>Password</label>
+
+</div>
+
+ <div class="col-right">  
+<input type="text" name="password" >
+
+</div>
+</div>
+
+
+		
+<div  class="row">
+			 <div class="col-left">
+		<label>Date of Birth</label>
+	</div>
+
+ <div class="col-right">  
+		<input type="date" name="dob" >
+
+	</div>
+</div>
+		
+
+<div  class="row">
+			 <div class="col-left">
+<label>Gender</label>
+
+</div>
+
+ <div class="col-right">  
+		<input type="radio" name="gender" value="Male" >Male
+		<input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="Female">Others
+
+</div>
+</div>
+
+
+<div  class="row">
+			 <div class="col-left">
+<label>Mobile</label>
+
+</div>
+ <div class="col-right">  
+
+<input type="number" name="Mobile">
+</div>
+</div>
+
+
+
+<div  class="row">
+			 <div class="col-left">
+<label>Address :</label>
+
+</div>
+ <div class="col-right">  
+        <textarea name="Address"  cols="30" rows="5"></textarea>
+       </div>
+   </div>
+
+
+
+
+         <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+</form>
+</div>
+
+</body>
+</html>

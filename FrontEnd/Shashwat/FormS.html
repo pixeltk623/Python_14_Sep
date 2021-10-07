@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<head>
+    <title>FORMS</title>
+    <style>
+      div.body{
+            width: 500px;
+            margin-left: 500px;
+            padding: 10px ;
+            background-color: lightgrey;
+            text-align: center;   
+            border-style: solid;
+            border-color: #000; ;     
+    }
+    table th,td{
+        width: 250px;
+        text-align: left;
+    }
+    h4{
+        text-align: left;
+    }
+    </style> 
+</head>
+<body>
+    <div class="body">
+    <u><h1>Registration Form</h1></u>   
+    <form method="POST" action="">
+        <label >First Name : &nbsp;&nbsp;</label>
+        <input type="text" name="fname" id="fname">
+        <br><br>
+        <label >Last Name :&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="lname" id="lname">
+        <br><br>
+        <label >Nick Name :&nbsp;&nbsp;</label>
+        <input type="text" name="nname" id="nname">
+        <br><br>
+        <label >Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" name="mail" id="mail">
+        <br><br>
+        <label >Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="password" id="password">
+        <br><br>
+        <label >Date of Birth :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="date" name="dob" id="dob" max="2021-09-22">
+        <br><br>
+        <label >Gender :</label>
+        <input type="radio" name="gender" id="gender">Male
+        <input type="radio" name="gender" id="gender">Female
+        <input type="radio" name="gender" id="gender">Others
+        <br><br>
+        <label >Mobile no. :&nbsp;&nbsp;</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+        <label>Address :</label>
+        <textarea name="Address" id="Address" cols="30" rows="5"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    </div>
+<br><br><br>
+    <div class="body">
+    <h2>Novell Services Login</h2>
+    <form action="" method="post">
+        <label>Username : </label>
+        <input type="text" name="userename" id="userename">
+        <br><br>  
+        <label>Password : </label>
+        <input type="text" name="password" id="password">
+        <br><br>
+        <label>City of Employment : </label>
+        <input type="text" name="coe" id="coe">
+        <br><br>      
+        <label>Web Server : </label>
+        <select name="webS" id="webS">
+                <option value="">-Choose a server-</option>
+                <option value="server 1">server 1</option>
+                <option value="server 2">server 2</option>
+                <option value="server 3">server 3</option>
+                <option value="server 4">server 4</option>
+        </select>
+        <br><br>  
+        <label>Please specify your role :</label>
+        <input type="radio" name="role" id="role">Admin<br>
+        <input type="radio" name="role" id="role">Engineer <br>
+        <input type="radio" name="role" id="role">Manager <br>
+        <input type="radio" name="role" id="role">Guest
+        <br><br> 
+        <label>Single sign-onto the following:</label>&nbsp;
+        <input type="checkbox" name="signon" value="Mail">Mail<br>
+        <input type="checkbox" name="signon" value="Payroll">Payroll <br>
+        <input type="checkbox" name="signon" value="Self Service ">Self Service 
+        <br><br>
+        <button type="submit">Login</button>
+        <button type="reset">Reset</button>
+    </form>
+    </div>
+<br><br><br>
+    <div class="body" style="background:green ;">
+        <h4>Step 1: Your Details</h4>
+        <form action="" method="post">
+            <label>Name : </label>
+            <input type="text" value="First and last name" id="name">
+            <br><br>
+            <label>Email : </label>
+            <input type="email" value="example@gmail.com" id="mail">
+            <br><br>
+            <label>Phone : </label>
+            <input type="number" id="phone">
+            <br><br>
+            <h4>Step 2: Delivery Address</h4>
+            <label>Address : </label>
+            <textarea name="address" id="address" cols="20" rows="5"></textarea>
+            <br><br>
+            <label>Post code: </label>
+            <input type="text" id="postcode" >
+            <br><br>
+            <label>Country : </label>
+            <input type="text"  id="country">
+            <br><br>
+            <h4>Step 3: Card Details</h4>
+            <label>Card type:</label><br>
+            <input type="radio" id="cardtype" value="Visa">Visa
+            <input type="radio" id="cardtype" value="AmEx">AmEx
+            <input type="radio" id="cardtype" value="Mastercard">Mastercard
+            <br><br>
+            <label>Card Number : </label>
+            <input type="number"  id="cardno">
+            <br><br>
+            <label>Security code : </label>
+            <input type="text"  id="securitycode">
+            <br><br>
+            <label>Name on card : </label>
+            <input type="text"  id="nameoncard" value="exact name as on the card">
+            <br><br>
+            <button type="submit">BUY IT!</button>
+        </form>
+    </div>
+<br><br><br>
+    <div class="body" style="background: white; text-align: left;">
+        <form action="" method="post">
+            <label>Name :&emsp;&nbsp;</label>
+            <input type="text" id="name">
+            <br><br>
+            <label>Password : </label>
+            <input type="text" id="password">
+            <br><br>
+            <label>Gender :</label>&nbsp;
+            <input type="radio" value="male">Male
+            <input type="radio" value="female">Female
+            <br><br>
+            <label>Email :&emsp;&nbsp;</label>
+            <input type="email" id="email">
+            <br><br>
+            <label>Phone no. :</label>
+            <select name="numbercode" id="numbercode">
+                <option value="+91">+91</option>
+                <option value="+91">+022</option>
+                <option value="+91">+060</option>
+                <option value="+91">+101</option>
+            </select>
+            <input type="number" id="phone">
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+<br><br><br>
+    <div class="body" style="background: white;">
+        <div class="body" style="margin-left: 0px; width: 475px; text-align: left;">
+            <form action="" method="post">
+           <label>Field 1</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+           <label>Field 2</label><br>
+           <input type="text" id="field1" value="text1">
+           <input type="text" id="field1" value="text2"><br><br>
+           <label>Field 3</label><br>
+           <select name="field3" id="field3">
+               <option value="combo1">combo 1&emsp;&emsp;</option>
+               <option value="combo2">combo 2&emsp;&emsp;</option>
+               <option value="combo3">combo 3&emsp;&emsp;</option>
+           </select><br><br>
+           <label>Field 4</label><br>
+           <input type="text" id="field4" value="text3"><br><br>
+           <label>Field 5</label><br>
+           <input type="text" id="field5" value="text4"><br><br>
+           <label>Field 6</label><br>
+           <textarea name="field6" id="field6" cols="62" rows="4">text-area 1</textarea>
+           <br><br>
+           <button type="submit">&emsp;OK&emsp;</button>
+           <button type="reset">CANCEL</button>
+        </form>
+        </div>
+    </div>
+<br><br><br>
+    <div class="body">
+        <form action="" method="post">
+            <table border="1" width="500">
+                <tr>
+                    <th style="text-align: center;">NAME</th>
+                    <th style="text-align: center;">VALUE</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="name" style="width:250px;"></td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
+                    <td><input type="radio" value="male">Male<br>
+                    <input type="radio" value="female">Female</td>
+                </tr>
+                <tr>
+                    <td>Eye Colour</td>
+                    <td>
+                        <select name="eyecolour" id="eyecolour">
+                            <option value="black">black</option>
+                            <option value="brown">brown</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                            <option value="purple">purple</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Check all that apply</td>
+                    <td>
+                        <input type="checkbox" value="height">Over 6 feet tall<br>
+                        <input type="checkbox" value="weight">Over 200 pounds
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Describe your athletic ability: <br>
+                    <textarea name="txtarea" id="txtarea" cols="65" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" colspan="2">
+                        <button type="submit">Enter my Information</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+<br><br><br>
+    <div class="body" style="background: rgb(188, 248, 67); border-color: tomato;">
+        <form action="" method="post" enctype="multipart/form-data">
+            <h3 style="color: red;">Personal Details</h3>
+            <label>Name : </label>
+            <input type="text" id="name">
+            <br><br>
+            <label>Password : </label>
+            <input type="text" id="password">
+            <br><br>
+            <label>E-mail id : </label>
+            <input type="email" id="mail">
+            <br><br>
+            <label>Gender : </label>
+            <input type="radio" id="gender" value="male">Male
+            <input type="radio" id="gender" value="female">Female
+            <br><br>
+            <label>Contact : </label>
+            <input type="number" id="contact">
+            <br><br>
+            <h3 style="color: red;">Educatational Qualifications</h3>
+            <label>Degree : </label>
+            <select name="degree" id="degree">
+                <option value="">--Select Group--</option>
+                <option value="B-tech">B-tech</option>
+                <option value="M-tech">M-tech</option>
+            </select>
+            <br><br>
+            <label>Engineering : </label>
+            <select name="Engineering" id="Engineering">
+                <option value="">--Select Group--</option>
+                <option value="">--Select Group--</option>
+                <option value="">--Select Group--</option>
+            </select>
+            <br><br>
+            <label>Hobbies : </label>
+            <input type="checkbox" value="chess"> Playing chess
+            <input type="checkbox" value="books"> Reading books
+            <br><br>
+            <h3 style="color: red;">Address</h3>
+            <textarea name="address" id="address" cols="40" rows="5"></textarea>
+            <br><br>
+            <label>Attatch Resume : </label>
+            <input type="file" value="no file choosen">
+            <br><br>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+<br><br><br>
+
+</body>
+</html>
