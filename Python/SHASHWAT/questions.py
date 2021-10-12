@@ -135,3 +135,36 @@
 # for i in range(1,num+1):
 #     sum += i
 # print("Sum of ",num,"natural numbers is ",sum)
+
+# # print reverse of a number
+# num = int(input("Enter a number to reverse:  "))
+# revNum = 0
+# while num>0:
+#     rem = num%10
+#     revNum = (revNum * 10) + rem
+#     num= num//10
+# print(revNum)
+
+# # sum of digits
+# num = int(input("Enter a number:  "))
+# x=num
+# sum = 0
+# while num>0:
+#     rem = num%10
+#     sum = sum + rem
+#     num = num//10
+# print("Sum of digits of ",x,"is ",sum)
+
+
+# # find exponent 
+# num = int(input("Enter a number:  "))
+# exp = int(input("Enter 2 for square and 3 for cube: "))
+
+# if exp==2:
+#     ans = num*num
+#     print("Square of ", num,"is ", ans)
+# elif exp==3:
+#     ans =num*num*num
+#     print("Cube of ", num,"is ", ans)
+# else:
+#     print("Input Invalid")
