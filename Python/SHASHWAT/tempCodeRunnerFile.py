@@ -178,11 +178,13 @@
 # print("Length of entered string is :  ",len(text))
 
 
-# # Write a Python program to count the number of characters (character frequency) 
-# # in a string
+# Write a Python program to count the number of characters (character frequency) 
+# in a string
 
-# text = input("Enter a string:  ")
-# count = 0
-# for x in text:
-#     count+= 1
-# print("Total number of characters in",text,"are",  count)
+text =   int(input("Enter a string:  "))
+count = 0
+for x in text:
+    #print(x)
+    if (x>'a' and x<'z') and (x>'A' and x<'Z'):
+        count +1
+print(count)
