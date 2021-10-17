@@ -1,0 +1,95 @@
+Que-B1 What is Python, Name some of the features of Python.
+Ans: Python is a dynamic, high level, free open source and interpreted programming language. 
+    It supports object-oriented programming as well as procedural oriented programming.
+    Features of Python:
+    1. Easy to code
+    2. Free and Open Source
+    3. Object-Oriented Language
+    4. GUI Programming Support
+    5. High-Level Language
+    6. Extensible feature
+    7. Python is Portable language
+    8. Python is Integrated language    
+    9. Interpreted Language
+    10. Large Standard Library
+    11. Dynamically Typed Language
+
+Que-B2 Write a Python program to get the Python version you are using?
+Ans: import sys
+    print("Python version")
+    print (sys.version)
+    print("Version info.")
+    print (sys.version_info)
+
+Que-B3 Is python the right choice for Web based Programming?
+Ans: Python is another open source programming that has become popular for creating web-related applications and large programs. 
+    Scripts written in Python are often very clear to read; the language is also known for its flexibility. Whether you are looking for database tools, 
+    image manipulation scripts, or something else entirely, if it is written in Python, you will find it here. 
+    Therefore, python is a right choice for web based programming.
+
+Que-B4 Why was the language called as Python?
+Ans: 
+
+Que-B6 What is the language from which Python has got its features or derived its features?
+Ans: Python is derived from many other languages, including ABC, Modula-3, C, C++, Algol-68, SmallTalk, and Unix shell and other scripting languages.
+    Python is copyrighted. Like Perl, Python source code is now available under the GNU General Public License (GPL). 
+
+Que-B8 Does python support switch or case statement in Python? If not what is the reason for the same?
+Ans: Python doesn't have a switch/case statement because of Unsatisfactory Proposals . 
+    Nobody has been able to suggest an implementation that works well with Python's syntax and established coding style.
+    Most programming languages have switch/case because they don't have proper mapping constructs. You cannot map a value to a function, that's why they have it.
+    But in Python, you can easily have a mapping table(dict) where a certain value maps to a certain function. 
+    Python functions are first class values, you can use the functions as the values of the dictionary get(key[, default]) method. 
+    Performance-wise, the Python dictionary lookup will almost certainly be more efficient than any solution you can rig yourself.
+
+Que-B9 How Python is interpreted?
+Ans: Python is a “COMPILED INTERPRETED” language.
+    This means when the Python program is run, First Python checks for program syntax, 
+    Compiles and converts it to bytecode, and directly bytecode is loaded in system memory.
+    Then compiled bytecode interpreted from memory to execute it.
+    Whereas other languages like c convert programs to machine code and save them as executables in the disk. And then the user can run it as a.out
+    We usually call Python an interpreted language because the compilation happens behind the scene and when we run the python code through:
+    python Hello.py -> directly executes the code, and we can see the output provided that code is syntactically correct
+    python Hello.py -> it looks like it directly executes, but it first generates the bytecode that the interpreter 
+    interprets to produce the native code for the execution purpose.
+    CPython takes the responsibility of both compilation and interpretation.
+    Proof for Python compilation is when you import any Python module in another program. 
+    In the imported module directory, another file with the same name .pyc will generate. This file executes later on.
+
+Que-B12 How memory is managed in Python?
+Ans: Garbage collectAns: Pychecker is an opensource tool for static analysis that detects the bugs from source code and warns about the style and complexity of the bug.
+
+Pylint is highly configurable and it acts like special programs to control warnings and errors, it is an extensive configuration file Pylint is also an opensource tool for static code analysis it looks for programming errors and is used for coding standard. it checks the length of each programming line. it checks the variable names according to the project style. it can also be used as a standalone program, it also integrates with python IDEs such as Pycharm, Spyder, Eclipse, and Jupyterion is a process in which the interpreter frees up the memory when not in use to make it available for other objects.
+    Assume a case where no reference is pointing to an object in memory i.e. it is not in use so, 
+    the virtual machine has a garbage collector that automatically deletes that object from the heap memory.
+
+    Reference counting works by counting the number of times an object is referenced by other objects in the system. 
+    When references to an object are removed, the reference count for an object is decremented. When the reference count becomes zero, the object is deallocated.
+
+Que-B13 What is namespace in Python?
+Ans: A namespace is a collection of currently defined symbolic names along with information about the object that each name references. 
+    You can think of a namespace as a dictionary in which the keys are the object names and the values are the objects themselves. 
+    Each key-value pair maps a name to its corresponding object.
+
+Que-B14 What is the purpose continue statement in python?
+Ans: The continue keyword is used to end the current iteration in a for loop (or a while loop), and continues to the next iteration.
+
+Que-I6 What are the tools that help to find bugs or perform static analysis?
+Ans: Pychecker is an opensource tool for static analysis that detects the bugs from source code and warns about the style and complexity of the bug.
+    Pylint is highly configurable and it acts like special programs to control warnings and errors, 
+    it is an extensive configuration file Pylint is also an opensource tool for static code analysis it looks for programming errors and is used for coding standard. 
+    It checks the length of each programming line. it checks the variable names according to the project style. it can also be used as a standalone program, 
+    it also integrates with python IDEs such as Pycharm, Spyder, Eclipse, and Jupyter
+
+Que-I7 What are Python decorators?
+Ans: Python has an interesting feature called decorators to add functionality to an existing code.
+    This is also called metaprogramming because a part of the program tries to modify another part of the program at compile time.
+
+
+Que-I8 What is PEP 8?
+Ans: The PEP is an abbreviation form of Python Enterprise Proposal. Writing code with proper logic is a key factor of programming, 
+    but many other important factors can affect the code's quality. The developer's coding style makes the code much reliable, 
+    and every developer should keep in mind that Python strictly follows the way of order and format of the string.
+    Adaptive a nice coding style makes the code more readable. The code becomes easy for end-user.
+    PEP 8 is a document that provides various guidelines to write the readable in Python. PEP 8 describes how the developer can write beautiful code. 
+    It was officially written in 2001 by Guido van Rossum, Barry Warsaw, and Nick Coghlan. The main aim of PEP is to enhance the readability and consistency of code.
