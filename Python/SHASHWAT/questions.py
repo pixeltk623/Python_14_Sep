@@ -186,3 +186,65 @@
 # for x in text:
 #     count+= 1
 # print("Total number of characters in",text,"are",  count)
+
+
+# # Write a Python program to count occurrences of a substring in a string
+
+# str = input("Enter a string:  ")
+# check = input("Enter a sub-string to check:  ")
+
+# print("Number of times",check,"occured in entered string is:  ",str.count(check))
+
+
+# # Write a Python program to add 'ing' at the end of a given string
+# # (length should be at least 3). If the given string already ends with 'ing' then add 'ly' instead 
+# # If the string length of the given string is less than 3, leave it unchanged
+
+# str = input("Enter a string:  ")
+# length = len(str)
+
+# if length>2:
+#     if str[-3:] =='ing':
+#         str += 'ly'
+#     else:
+#         str += 'ing'
+
+# print("--",str,"--")
+
+
+# # Write a Python function that takes a list of words and returns the length of the longest one.
+
+# testList = ["java","cpp","python"]
+
+# lengthList = []
+
+# for x in testList:
+#     lengthList.append(len(x))
+
+# lengthList.sort()
+# # print(lengthList)
+# print("Length of the longest word in",testList,"is ",lengthList[-1])
+
+# # Write a Python function to reverses a string if it's length is a multiple of 4
+
+# str = input("Enter a string:  ")
+# length = len(str)
+
+# if (length%4) == 0:
+#     print("Reversed string of",str,"is",str[::-1])
+# else:
+#     print(str)
+
+
+# # Write a Python program to get a string made of the first 2 and the last 2 chars
+# # from a given a string. If the string length is less than 2, return instead of the empty string.
+
+# str = input("Enter a string:  ")
+# length = len(str)
+
+# if length<2:
+#     print("_____")
+# else:
+#     print(str[:2]+str[-2:])
+
+

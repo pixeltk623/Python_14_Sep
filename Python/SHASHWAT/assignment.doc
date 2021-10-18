@@ -93,3 +93,32 @@ Ans: The PEP is an abbreviation form of Python Enterprise Proposal. Writing code
     Adaptive a nice coding style makes the code more readable. The code becomes easy for end-user.
     PEP 8 is a document that provides various guidelines to write the readable in Python. PEP 8 describes how the developer can write beautiful code. 
     It was officially written in 2001 by Guido van Rossum, Barry Warsaw, and Nick Coghlan. The main aim of PEP is to enhance the readability and consistency of code.
+
+Que-B3 What are negative indexes and why are they used?
+Ans:  Python programming language supports negative indexing of arrays, something which is not available in arrays in most other programming languages. 
+    This means that the index value of -1 gives the last element, and -2 gives the second last element of an array. 
+    The negative indexing starts from where the array ends. This means that the last element of the array is the first element in the negative indexing which is -1.
+    This means that negative indices are used for accessing the elements from the ending of an arrray or list.
+
+Que-B4  Explain split(), sub(), subn() methods of “re” module in Python.
+Ans: sub() – finds all substrings where the regex pattern matches and then replace them with a different string
+    split() – uses a regex pattern to “split” a given string into a list.
+    subn() – being similar to sub() it also returns the new string along with the number of replacements.
+
+Que-B5 How do you perform pattern matching in Python? Explain.
+Ans: The re.search() method takes two arguments, a regular expression pattern and a string and searches for that pattern within the string. 
+    If the pattern is found within the string, search() returns a match object or None otherwise. So in a regular expression, given a string, 
+    determine whether that string matches a given pattern, and, optionally, collect substrings that contain relevant information.
+    Regular expressions are complicated mini-language. They rely on special characters to match unknown strings, but let's start with literal characters, 
+    such as letters, numbers, and the space character, which always match themselves.
+    #Need module 're' for regular expression
+    import re
+    search_string = "TutorialsPoint"
+    pattern = "Tutorials"
+    match = re.match(pattern, search_string)
+    #If-statement after search() tests if it succeeded
+    if match:
+        print("regex matches: ", match.group())
+    else:
+        print('pattern not found')
+
