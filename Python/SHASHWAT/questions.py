@@ -248,3 +248,39 @@
 #     print(str[:2]+str[-2:])
 
 
+# # remove all the repetations of rahul in the tuple
+
+# newTuple = ("shravan","rahul","kavita","nisha","farook","rahul","rahul","rahul","rahul")
+
+# newList = list(newTuple)
+# List = []
+# for x in range(len(newList)):
+#     if newList[x] != "rahul":
+#         List.append(newList[x])
+# print(tuple(List))
+
+
+# # find the numbers present in the list divisible by a given number
+
+# newList = [10,4,3,16,28,36,93]
+
+# num = int(input("Enter a number to check divisiblity:  "))
+# List = []
+# for x in range(len(newList)):
+#     if newList[x]%num == 0:
+#         List.append(newList[x])
+# print(List)
+
+
+# # The original list is : [1, 3, 5, 6, 3, 5, 6, 1]
+# # The list after removing duplicates : [1, 3, 5, 6]
+
+# newList = [1, 3, 5, 6, 3, 5, 6, 1]
+
+# List1 = []
+
+# for i in range(len(newList)):
+#     if newList[i] not in List1:
+#         List1.append(newList[i])
+
+# print(List1)
