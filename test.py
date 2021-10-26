@@ -1,3 +1,9 @@
+
+count(1)
+thislist.append("asdadasds")
+thislist.extend(tropical)
+newlist = ['hello' for x in fruits]
+
 list1 = [10, 20, 30, 40, 50]
 # start = list's size
 # stop = -1

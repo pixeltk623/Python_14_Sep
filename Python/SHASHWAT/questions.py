@@ -225,6 +225,7 @@
 # # print(lengthList)
 # print("Length of the longest word in",testList,"is ",lengthList[-1])
 
+
 # # Write a Python function to reverses a string if it's length is a multiple of 4
 
 # str = input("Enter a string:  ")
@@ -284,3 +285,29 @@
 #         List1.append(newList[i])
 
 # print(List1)
+
+
+# # print a value multiple times in same tuple
+
+# newTuple = (1,2,3)
+# n = int(input("Enter how many times you want to duplicate the tuple:  "))
+# finalTuple = (newTuple * n)
+
+# print(finalTuple)
+
+
+# # I1.Write a Python program to get a single string from two given strings, 
+# # separated by a space and swap the first two characters of each string.
+
+
+# str1 = input("Enter first string:  ")
+# str2 = input("Enter second string: ")
+
+# newStr2 = str1[:2]+str2[2:]
+# newStr1 = str2[:2]+str1[2:]
+
+# print(newStr1," ", newStr2)
+
+
+
+

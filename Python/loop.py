@@ -99,5 +99,25 @@
 # print(sumOfNnumber)
 
 
-for i in range(5, -1, -1):
-    print(i)
+# for i in range(5, -1, -1):
+#     print(i)
+
+# 1 - 10 
+
+# 6 8 => skip 
+
+# 1 - 10
+
+# 5
+
+# for x in range(1,11):
+# 	if x==6 or x == 8:
+# 		continue
+# 	print(x)
+
+
+
+# for x in range(1,11):
+# 	if x==6:
+# 		break
+# 	print(x)
