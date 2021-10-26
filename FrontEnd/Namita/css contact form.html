@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+	
+
+
+body{
+  background:white;
+}
+
+.contact-us{
+  font-family:'Open Sans Condensed', sans-serif;
+  width:100px;
+  min-width:250px;
+  margin: 20px auto;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  background: white;
+  width: 100%;
+  padding: 100px 0;
+  border-radius: 3px 3px 0 0;
+  color: black;
+ }
+ 
+
+.contact-us input[type=text] {
+  padding: 10px 100px;
+  border-radius: 1px;
+  text-align:left;
+  margin:5px auto;
+  border: 1px solid silver;
+
+ }
+ .contact-us input[type=textarea]{
+ 	padding: 10px 100px;
+ 	 border-radius: 1px;
+     margin:5px auto;
+     border: 1px solid silver;
+
+ }
+
+button{
+
+	padding: 10px 40px;
+	border-radius: 2px;
+	margin: 10px 100px auto;
+	color:white;
+	background-color: blue;
+    
+}
+
+
+
+</style>
+
+
+
+<h1>Contact us</h1>
+
+  <div class='contact-us'>
+        <div class='row'>
+       
+        <input type="text" placeholder="Name" name='firstname' id='name' data-required="true" data-error-message="Your  Name is required">
+        </div>
+
+        <div class='row'>
+        
+        <input type="text" placeholder="E-mail"  name='email' data-required="true" data-type="email" data-error-message="Your E-mail is required">
+        </div>
+
+        <div class='row'>
+        <input type="textarea" name="text area" placeholder="Message" name='Message' id="Message" data-required="true">
+        </div>
+
+      <div>
+      <button input type="button" name="send" value="send">SEND</button>
+  
+</div>
+
+</body>
+</html>
+     

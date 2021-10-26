@@ -2,6 +2,7 @@
 <html>
 <head>
         <title>Wesite CSS Layout</title>
+        <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -14,16 +15,14 @@
 		font-family: Arial;
 	}
 
-	 body {
-	 	background-color: grey;
-	 }
-
+	
 	 header{
 	 	text-align: center;
 	 	background-color: white;
-	 	padding: 10px;
+	 	padding: 15px;
 	 	margin: 5px 5px 0px 5px;
 	 }
+
 	 header h1{
 	 	font-size: 50px;
 	 }
@@ -42,12 +41,16 @@
 			float: left;
 		}
 
+           ul li.right{
+			float: right;
+		}
+
 		ul li a {
 			text-decoration: none;
 			display: inline-block;
-			padding: 10px 20px;
+			padding: 20px 25px;
 		    color: white;
-		    font-size: 25px;
+		    font-size: 17px;
 			
 		}
 
@@ -92,16 +95,17 @@
 		width: 100%;
 	}
 
-.row::after {
 
-		content="";
-		display:table;
-		clear:both;
-	}
 
+            .row::after
+            {
+	         content: "";
+	         display: table;
+              clear: both;
+}
 	footer{
 
-         width:100%;
+        width: 100%;
 		background-color: lightgrey;
 		text-align: center;
 		padding: 18px;
@@ -115,17 +119,22 @@
 	}
 
 
-	@media screen and (min-width: 300px) and (max-width: 480px){
+	@media screen and (min-width: 300px) and (max-width: 480px)
+	{
 
 		ul li{
 			float: none;
 			text-align: center;
- }
+           }
 
-            ul li.right{
-                float: none;
-                text-align: center;
-            }
+          ul li.right{
+
+          	float: right;
+          	text-align: center;
+          }
+
+              
+            
 
 	.col-left{
      width: 100%;
@@ -138,9 +147,10 @@
 
 </style>
 </head>
-<body>
+<body style="background-color: lightgrey;">
 		
 		<header>
+
 		<h1> My Website</h1>
 		<p>Resize the border of the window to see the effect</p>
 	</header>
@@ -148,8 +158,7 @@
 		<li><a href="">Link</a></li>
 		<li><a href="">Link</a></li>
 		<li><a href="">Link</a></li>
-		<li style="float: right;"><a href="">Link</a>
-	</li>
+		<li class="right"><a href="">Link</a></li>
 	</ul>
 
 	<div class="row">
@@ -169,7 +178,7 @@
 				<h5>Title discription , Dec 7, 2017</h5>
 				<div class="image-left">Image</div>
 				<p>Some text...</p>
-				<p>To me, this overhead view of time gives a profound perspective - that we are living inside the hot flash of the Big Bang, the perfect moment to soak in the sights and sounds of a universe in its glory days, before it all fades away.  Although the end will eventually come, we have a practical infinity of time to play with if we play our cards right. The future may look bleak, but we have enormous potential as a species.</p>
+				<p>To me, this overhead view of time gives a profound perspective - that we are living inside the hot flash of the Big Bang, the perfect moment to soak in the sights and sounds of a universe in its glory days, before it all fades away.Although the end will eventually come, we have a practical infinity of time to play with if we play our cards right. The future may look bleak, but we have enormous potential as a species.</p>
 			</div>
 		</div>
 
@@ -197,11 +206,10 @@
              </div>
 
 			 
-<div>
             <footer>
 			<h3>Footer</h3>
 			</footer> 
-		</div>
+	
 </body>
 
 </html>
