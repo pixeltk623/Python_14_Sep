@@ -92,7 +92,7 @@ import sendgrid
 import os
 from sendgrid.helpers.mail import *
 
-sg = sendgrid.SendGridAPIClient(api_key="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")
+sg = sendgrid.SendGridAPIClient(api_key="")
 
 for x in range(1,2):
 	

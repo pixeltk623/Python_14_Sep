@@ -1,3 +1,5 @@
+MODULE-2
+
 Que-B1 What is Python, Name some of the features of Python.
 Ans: Python is a dynamic, high level, free open source and interpreted programming language. 
     It supports object-oriented programming as well as procedural oriented programming.
@@ -121,4 +123,60 @@ Ans: The re.search() method takes two arguments, a regular expression pattern an
         print("regex matches: ", match.group())
     else:
         print('pattern not found')
+
+
+MODULE-3
+
+Que-B1.What is List? How will you reverse a list?
+Ans: A list in Python is used to store the sequence of various types of data. 
+    Python lists are mutable type its mean we can modify its element after it created. 
+    However, Python consists of six data-types that are capable to store the sequences, but the most common and reliable type is the list.
+    A list can be defined as a collection of values or items of different types.    
+    The items in the list are separated with the comma (,) and enclosed with the square brackets [].
+
+    List can be reversed using the built-in reverse() function.
+
+    List = [1,2,3,4,5,6,7,8]
+    List.reverse()
+    print(List)
+
+    output: [8,7,6,5,4,3,2,1]
+
+Que-B2.How will you remove last object from a list?
+Ans: Last object from the list can be removes using pop() function.
+    List = [1,2,3,4,5,6,7,8]
+    List.pop()
+    print(List)
+
+
+    output: [1,2,3,4,5,6,7]
+
+
+Que-B3.Suppose list1 is [2, 33, 222, 14, 25], What is list1[-1] ?
+Ans: list1[-1] will be 25 as -1 will get the last object in the list.
+
+Que-B4.Differentiate between append() and extend() methods.?
+Ans: The append() can add a single elements to the end of the list while extend() can add argument-list’s all elements to the end of the list.
+    After append(), the length of the list will increase by 1 element only while after extend(), the length of the list will increase by the length of inserted list.
+
+
+Que-B6.How will you compare two lists?
+Ans: 1. Using Membership Operator
+    We can compare the list by checking if each element in the one list present in another list.
+    2. Using Set Method
+    To compare two lists, we are using the set method.
+    If the length of the two lists is different, the list can not be identical and return False.
+    Else, Convert both the lists into sets.
+    Compare these two sets. If the sets are equal, two given lists are the same. Otherwise, two lists are different.
+    3. Using Sort Method
+    We can sort the two given list and then compare.
+    4. Return Non-Matches Elements with For Loop
+    You can write a function to return all unmatched elements in the list using for loop.
+    5. Difference Between Two List
+    We can perform the subtraction operation on set to find the extra elements in one list from another list.
+    6. Lambda Function To Return All Unmatched Elements
+    We can rewrite the above regular function using the lambda function to get all the non-matched elements in the lists.
+
+
+
 

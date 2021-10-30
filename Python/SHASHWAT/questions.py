@@ -299,7 +299,6 @@
 # # I1.Write a Python program to get a single string from two given strings, 
 # # separated by a space and swap the first two characters of each string.
 
-
 # str1 = input("Enter first string:  ")
 # str2 = input("Enter second string: ")
 
@@ -309,5 +308,104 @@
 # print(newStr1," ", newStr2)
 
 
+# B7.Write a Python program to count the occurrences of each word in a given sentence
+
+# str = 'the quick brown fox jumps over the lazy dog.'
+# counts = dict()
+# words = str.split()
+
+# for word in words:
+#     if word in counts:
+#         counts[word] += 1
+#     else:
+#         counts[word] = 1
+
+# print(counts)
+
+
+# I3.Write a Python program to find the first appearance of the substring 'not'
+# and 'poor' from a given string, if 'not' follows the 'poor', replace the whole 'not'...'poor' 
+# substring with 'good'. Return the resulting string.
+
+# def not_poor(str1):
+#     snot = str1.find('not')
+#     spoor = str1.find('poor')
+
+#     if spoor > snot and snot>0 and spoor>0:
+#         str1 = str1.replace(str1[snot:(spoor+4)], 'good')
+#         print(str1)
+#     else:
+#         print(str1)
+
+# not_poor('The lyrics is not that poor!')
+# not_poor('The lyrics is poor!')
+
+
+# A2.Write a Python program to get a string from a given string where all occurrences 
+# of its first char have been changed to '$', except the first char itself
+
+# str = input("Enter a string:  ")
+# char = str[0]  
+# length = len(str)  
+# str = str.replace(char, '$')  
+# str = char + str[1:]  
+  
+# print(str)
+
+
+# A3. Write a Python function to insert a string in the middle of a string.
+
+# str = input("Enter a string:  ")
+# str1 = input("Enter string to insert:  ")
+
+# x = int(len(str)/2)
+
+# print(str[:x+1]+" " + str1 + str[(x+1):])
+
+
+# B5. Write a Python function to get the largest number ,
+# smallest num and sum of all from a list
+
+# def largeNum(numList):
+#     maxNum = numList[0]
+
+#     for x in numList:
+#         if x > maxNum:
+#             maxNum = x
+#     return maxNum
+
+# def smallNum(numList):
+#     smNum = numList[0]
+
+#     for x in numList:
+#         if x < smNum:
+#             smNum = x
+#     return smNum
+
+# def sumOfNum(numList):
+#     sum = 0
+#     for x in numList:
+#         sum += x
+#     return sum    
+
+# numList = [5,44,31,7,551,24,2]
+# print(numList)
+# print("Largest number in the list is: ",largeNum(numList))
+# print("Largest number in the list is: ",smallNum(numList))
+# print("Sum of all numbers in the list is: ",sumOfNum(numList))
+
+
+# I1. Write a Python program to count the number of strings where the 
+# string length is 2 or more and the first and last character are same from a
+# given list of strings.
+
+# charList = ['abc', 'xyz', 'aba', '1221']
+
+# count = 0
+
+# for x in charList: 
+#     if len(x)>1 and x[0]==x[1]:
+#         count+=1
+# print(count)
 
 
