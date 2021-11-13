@@ -308,7 +308,7 @@
 # print(newStr1," ", newStr2)
 
 
-# B7.Write a Python program to count the occurrences of each word in a given sentence
+# # B7.Write a Python program to count the occurrences of each word in a given sentence
 
 # str = 'the quick brown fox jumps over the lazy dog.'
 # counts = dict()
@@ -323,9 +323,9 @@
 # print(counts)
 
 
-# I3.Write a Python program to find the first appearance of the substring 'not'
-# and 'poor' from a given string, if 'not' follows the 'poor', replace the whole 'not'...'poor' 
-# substring with 'good'. Return the resulting string.
+# # I3.Write a Python program to find the first appearance of the substring 'not'
+# # and 'poor' from a given string, if 'not' follows the 'poor', replace the whole 'not'...'poor' 
+# # substring with 'good'. Return the resulting string.
 
 # def not_poor(str1):
 #     snot = str1.find('not')
@@ -341,8 +341,8 @@
 # not_poor('The lyrics is poor!')
 
 
-# A2.Write a Python program to get a string from a given string where all occurrences 
-# of its first char have been changed to '$', except the first char itself
+# # A2.Write a Python program to get a string from a given string where all occurrences 
+# # of its first char have been changed to '$', except the first char itself
 
 # str = input("Enter a string:  ")
 # char = str[0]  
@@ -353,7 +353,7 @@
 # print(str)
 
 
-# A3. Write a Python function to insert a string in the middle of a string.
+# # A3. Write a Python function to insert a string in the middle of a string.
 
 # str = input("Enter a string:  ")
 # str1 = input("Enter string to insert:  ")
@@ -363,8 +363,8 @@
 # print(str[:x+1]+" " + str1 + str[(x+1):])
 
 
-# B5. Write a Python function to get the largest number ,
-# smallest num and sum of all from a list
+# # B5. Write a Python function to get the largest number ,
+# # smallest num and sum of all from a list
 
 # def largeNum(numList):
 #     maxNum = numList[0]
@@ -395,9 +395,9 @@
 # print("Sum of all numbers in the list is: ",sumOfNum(numList))
 
 
-# I1. Write a Python program to count the number of strings where the 
-# string length is 2 or more and the first and last character are same from a
-# given list of strings.
+# # I1. Write a Python program to count the number of strings where the 
+# # string length is 2 or more and the first and last character are same from a
+# # given list of strings.
 
 # charList = ['abc', 'xyz', 'aba', '1221']
 
@@ -407,5 +407,240 @@
 #     if len(x)>1 and x[0]==x[1]:
 #         count+=1
 # print(count)
+
+
+# # I2.Write a Python program to remove duplicates from a list
+
+# myList = ["Yellow","Blue","Brown","Blue","Green","Yellow"]
+
+# print(myList)
+
+# mySet = list(set(myList))
+
+# print(mySet)
+
+
+# # I3.Write a Python program to check a list is empty or not.
+
+# myList = []
+
+# if not myList:
+#     print("List is empty")
+
+
+# # I4.Write a Python function that takes two lists and returns True if they have at least one common member
+
+# def listCheck(list1,list2):
+#     for x in list1:
+#         for y in list2:
+#             if x==y:
+#                 return True
+
+# list1 = [1,2,3,4,5]
+# list2 = [7,8,9,4,5]
+# list3 = [7,8,9,0]
+
+# print(listCheck(list1,list2))
+# print(listCheck(list1,list3))
+
+
+# # I5.Write a Python program to generate and print a list of first and last 5 elements 
+# # where the values are square of numbers between 1 and 30
+
+# squareList = []
+
+# for i in range(1,31):
+#     if i>5 and i<=25:
+#         continue
+#     else:
+#         squareList.append(i**2)
+
+# print(squareList)
+
+
+# # I6. Write a Python function that takes a list and returns a new list with 
+# # unique elements of the first list
+
+# myList = [1,1,2,2,1,3,44,2,1,5,7,9,3,41,8,6,32]
+# newList = []
+
+# for x in myList:
+#     if x not in newList:
+#         newList.append(x)
+
+# print(newList)
+
+
+# # I7. Write a Python program to convert a list of characters into a string
+
+# charList = ["a","b","c","d","e","f","g"]
+# str = "".join(charList)
+# print(str)
+
+
+# # A1.Write a Python program to select an item randomly from a list.
+
+# import random
+# myList = [1,2,4,3,55,77,99,5,44,85]
+# print(myList)
+
+# print(random.choice(myList))
+
+
+# # A2.Write a Python program to find the second smallest number in a list.
+
+# myList = [55,77,99,5,44,85,1,2,4,3]
+
+# myList.sort()
+
+# print("Smallest number in list is:  ",myList[0])
+
+
+# # A4.Write a Python program to check whether a list contains a sublist
+
+# test_list = [5, 6, 3, 8, 2, 1, 7, 1]
+
+# print("The original list : " + str(test_list))
+
+# sublist = [8, 2, 1]
+
+# res = False
+# for idx in range(len(test_list) - len(sublist) + 1):
+# 		if test_list[idx : idx + len(sublist)] == sublist:
+# 			res = True
+# 			break
+		
+# print("Is sublist present in list ? : " + str(res))
+
+
+# # A4.Write a Python program to check whether a list contains a sublist
+
+# def is_Sublist(List, subList):
+# 	sub_set = False
+# 	if subList == []:
+# 		sub_set = True
+# 	elif subList == List:
+# 		sub_set = True
+# 	elif len(subList) > len(List):
+# 		sub_set = False
+
+# 	else:
+# 		for i in range(len(List)):
+# 			if List[i] == subList[0]:
+# 				n = 1
+# 				while (n < len(subList)) and (List[i+n] == subList[n]):
+# 					n += 1
+				
+# 				if n == len(subList):
+# 					sub_set = True
+
+# 	return sub_set
+
+# a = [2,4,3,5,7]
+# b = [4,3]
+# c = [3,7]
+# print(is_Sublist(a, b))
+# print(is_Sublist(a, c))
+
+
+# # A5.Write a Python program to split a list into different variables.
+
+# myList = ["Black", "Blue", "Brown"]
+
+# var1,var2,var3 =myList
+
+# print(var1,var2,var3)
+
+
+# # B2.Write a Python program to create a tuple with different data types
+
+# myTuple = ("String",True,2.1452,1)
+
+# print(myTuple)
+
+
+# # B3. Write a Python program to create a tuple with numbers
+
+# myTuple = 5,4,6,2,1,9
+
+# print(myTuple)
+
+
+# # B4.Write a Python program to convert a tuple to a string
+
+# myTuple = ('m','y','T','u','p','l','e')
+
+# str1 = ''.join(myTuple)
+
+# print(str1)
+
+
+# # B5.Write a Python program to check whether an element exists within a tuple
+
+# myTuple = ('m','y','T','u','p','l','e')
+
+# print("l" in myTuple)
+# print("a" in myTuple)
+
+
+# # B7.Write a Python program to find the length of a tuple.
+
+# myTuple = ('m','y','T','u','p','l','e')
+
+# print("length of tuple is",len(myTuple))
+
+
+# # B6.Write a Python program to convert a list to a tuple
+
+# myTuple = ('m','y','T','u','p','l','e')
+
+# myList = list(myTuple)
+
+# print(myList)
+
+
+# # I1. Write a Python program to reverse a tuple
+
+# tuple1 = ("myTuple")
+
+# tuple2 = reversed(tuple1)
+
+# print("Reversed tuple is ",tuple(tuple2))
+
+
+# # I2.Write a Python program to replace last value of tuples in a list
+
+# myList = [(2,1,9),(5,4,6)]
+
+# print([myTuple[:-1] + (10,) for myTuple in myList])
+
+
+# # I3.Write a Python program to find the repeated items of a tuple
+
+# myTuple = (5,4,6,2,1,9,4,6,2,2,1,9,4,6)
+
+# print(myTuple.count(2))
+
+
+# # A1.Write a Python program to remove an empty tuple(s) from a list of tuples.
+
+# myList = [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
+# myList = [Tuple for Tuple in myList if Tuple]
+# print(myList)
+
+
+# # A2.Write a Python program to unzip a list of tuples into individual lists
+
+# myList = [(2,1),(5,4),(6,9)]
+# print(list(zip(*myList)))
+
+
+# # A3. Write a Python program to convert a list of tuples into a dictionary
+
+# myList = [("x", 1), ("x", 2), ("x", 3), ("y", 1), ("y", 2), ("z", 1)]
+# dict1 = {}
+# for a, b in myList:
+#     dict1.setdefault(a, []).append(b)
+# print (dict1)
 
 

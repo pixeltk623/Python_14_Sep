@@ -1,4 +1,4 @@
-MODULE-2
+-------------MODULE-2-------------
 
 Que-B1 What is Python, Name some of the features of Python.
 Ans: Python is a dynamic, high level, free open source and interpreted programming language. 
@@ -125,7 +125,7 @@ Ans: The re.search() method takes two arguments, a regular expression pattern an
         print('pattern not found')
 
 
-MODULE-3
+-------------MODULE-3-------------
 
 Que-B1.What is List? How will you reverse a list?
 Ans: A list in Python is used to store the sequence of various types of data. 
@@ -176,6 +176,25 @@ Ans: 1. Using Membership Operator
     We can perform the subtraction operation on set to find the extra elements in one list from another list.
     6. Lambda Function To Return All Unmatched Elements
     We can rewrite the above regular function using the lambda function to get all the non-matched elements in the lists.
+
+
+Que-B1.What is tuple?Difference between list and tuple.
+Ans: Tuples are used to store multiple items in a single variable.
+    Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, 
+    all with different qualities and usage.
+    A tuple is a collection which is ordered and unchangeable.
+    Tuples are written with round brackets.
+
+    List is just like the arrays, declared in other languages. Lists need not be homogeneous always which makes it the most powerful tool 
+    in Python. In Python, the list is a type of container in Data Structures, which is used to store multiple data at the same time. 
+    Lists are a useful tool for preserving a sequence of data and further iterating over it. 
+    Syntax: 
+        list_data = ['an', 'example', 'of', 'a', 'list']
+
+    Tuple is also a sequence data type that can contain elements of different data types, but these are immutable in nature. In other words, 
+    a tuple is a collection of Python objects separated by commas. The tuple is faster than the list because of static in nature. 
+    Syntax:
+        tuple_data = ('this', 'is', 'an', 'example', 'of', 'tuple')
 
 
 
