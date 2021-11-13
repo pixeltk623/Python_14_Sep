@@ -1,0 +1,107 @@
+CREATE DATABASE test
+DROP DATABASE test
+
+DROP DATABASE `login_system`
+
+employees
+
+e_id
+name
+email
+gender
+Address
+dob
+created_at
+updated_at
+
+SELECT name, email,created_at, DATE_FORMAT(created_at, "%Y-%m-%d") FROM employees
+
+UPDATE `employees` SET `email` = 'sh@yaho.com' WHERE `employees`.`e_id` = 1;
+
+SELECT p.name, c.name AS category_name, p.`description`, p.`price`, p.`created` FROM `products` AS p LEFT JOIN categories AS c ON p.`category_id` = c.id
+
+
+CREATE TABLE usres(
+    u_id INT(11) PRIMARY KEY AUTO_INCREMENT,
+    NAME VARCHAR(255),
+    email VARCHAR(255),
+    address LONGTEXT,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+)
+
+INSERT INTO usres (name, email, address) VALUES ('Ravi', 'r@gmail.com', 'Vadodara')
+
+INSERT INTO employees (name, email, gender, Address, dob) VALUES ('ABC','sh@yahoo.com','Male','XYZ','2015-05-05')
+
+
+TRUNCATE `python_14_sep`.`employees`
+
+DELETE FROM `employees` WHERE `employees`.`e_id` = 2
+
+
+-- phpMyAdmin SQL Dump
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 28, 2021 at 03:04 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `python_14_sep`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employees`
+--
+
+CREATE TABLE `employees` (
+  `e_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `gender` varchar(255) NOT NULL,
+  `Address` longtext NOT NULL,
+  `dob` date NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `employees`
+--
+ALTER TABLE `employees`
+  ADD PRIMARY KEY (`e_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `employees`
+--
+ALTER TABLE `employees`
+  MODIFY `e_id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
