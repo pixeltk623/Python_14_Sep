@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'polls',
+    'simple_crud',
 ]
 
 MIDDLEWARE = [
@@ -80,6 +81,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+
 
 
 DATABASES = {
