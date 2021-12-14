@@ -644,3 +644,10 @@
 # print (dict1)
 
 
+# list1 = [2,3,4,4,3,5,5,7,7,4,2,1,1,8]
+
+# for x in list1:
+#     if list1[x] == list1[x+1]:
+#         list1.pop(x)
+
+# print(list1)

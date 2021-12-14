@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>SIMPLE_CRUD</title>
+  </head>
+  <body>
+    
+
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-header">
+          <h1 class="text-center">All Users</h1>
+        </div>
+        <form class="form-control card-body" method="post">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="mobile" placeholder="Enter your mobile">
+          </div>
+          <button type="submit" class="btn btn-primary" onclick="return checkPara()">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+    <script>
+      
+      function checkPara(){
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let mobile = document.getElementById("mobile");
+        if(name.value==""){
+          console.log("Name can not be blank...");
+          document.getElementById("name").classList.add('is-invalid');
+          document.getElementById("name").classList.remove('is-valid');
+        }else{
+          document.getElementById("name").classList.remove('is-invalid');
+          document.getElementById("name").classList.add('is-valid');
+        } 
+        if (email.value==""){
+          console.log("email can not be blank...");
+          document.getElementById("email").classList.remove('is-valid');
+          document.getElementById("email").classList.add('is-invalid');
+        }else{
+          document.getElementById("email").classList.remove('is-invalid');
+          document.getElementById("email").classList.add('is-valid');
+        } 
+        if (mobile.value==""){
+          console.log("mobile can not be blank...");
+          document.getElementById("mobile").classList.add('is-invalid');
+          document.getElementById("mobile").classList.remove('is-valid');
+        }else{
+          document.getElementById("mobile").classList.remove('is-invalid');
+          document.getElementById("mobile").classList.add('is-valid');
+        }
+
+        if(name.value!="" && email.value!="" && mobile.value!=""){
+          return true;
+        }
+        return false;
+      }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
