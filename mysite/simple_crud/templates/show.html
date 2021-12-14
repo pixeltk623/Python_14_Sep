@@ -14,50 +14,31 @@
     
     <div class="container mt-3">
     	<h1 class="text-center text-primary">All Users List</h1>
-    	<a href="{% url 'create' %}" class="btn btn-primary mb-3">Add New User</a>
+    	<a href="/simple_crud" class="btn btn-warning mb-3">Back To Home</a>
 
-    	{% if messages %}
-		<div class="alert alert-success">
-			{% for message in messages %}
-				{{ message }}
-			{% endfor %}
-		</div>
-		{% endif %}
 
 
     	<table class="table table-bordered">
-		  <thead>
-		    <tr>
-		      <th scope="col">Sr.No</th>
-		      <th scope="col">Name</th>
-		      <th scope="col">Email</th>
-		      <th scope="col">Mobile</th>
-		      <th>Action</th>
-		    </tr>
-		  </thead>
-		  <tbody>
-
-		  	
-		  	{% if all_entries %}
-			  	{% for data in all_entries %}
-			    <tr>
-			      <td>{{ forloop.counter }}</td>
-			      <td>{{ data.name }}</td>
-			      <td>{{ data.email }}</td>
-			      <td>{{ data.mobile }}</td>
-			      <td>
-			      	<a href="show/{{ data.id }}" class="btn btn-secondary">Show</a>
-			      	<a href="edit/{{ data.id }}" class="btn btn-info">Edit</a>
-			      	<a href="delete/{{ data.id }}" class="btn btn-danger">Delete</a>
-			      </td>
-			    </tr>
-			    {% endfor %}
-			{% else %}
-				<tr>
-		  			<td colspan="5" class="text-center text-danger">No Record Found</td>
-		  		</tr>
-		    {% endif %}
-		  </tbody>
+		 	<tr>
+		 		<th>Name</th>
+		 		<td>{{ single_data.name }}</td>
+		 	</tr>
+		 	<tr>
+		 		<th>Email</th>
+		 		<td>{{ single_data.email }}</td>
+		 	</tr>
+		 	<tr>
+		 		<th>Mobile</th>
+		 		<td>{{ single_data.mobile }}</td>
+		 	</tr>
+		 	<tr>
+		 		<th>Created At</th>
+		 		<td>{{ single_data.created_date|date:"Y-m-d"  }}</td>
+		 	</tr>
+		 	<tr>
+		 		<th>Updated At</th>
+		 		<td>{{ single_data.modified_date  }}</td>
+		 	</tr>
 		</table>
     </div>
 
