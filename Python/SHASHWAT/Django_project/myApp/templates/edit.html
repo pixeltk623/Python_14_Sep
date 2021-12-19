@@ -11,6 +11,7 @@
     <title>EDIT DETAILS---SIMPLE_CRUD</title>
   </head>
   <body>
+
     
 
     <div class="container mt-4">
@@ -29,14 +30,52 @@
               <label for="Name" class="form-label">Name</label>
               <input type="text" class="form-control" id="name" name="name" value="{{ single_data.name }}" placeholder="Enter your name">
             </div>
+
             <div class="mb-3">
               <label for="email" class="form-label">E-mail</label>
               <input type="text" class="form-control" id="email" name="email" value="{{ single_data.email }}" placeholder="Enter your email">
             </div>
+
             <div class="mb-3">
               <label for="mobile" class="form-label">Mobile Number</label>
               <input type="text" class="form-control" id="mobile" name="mobile" value="{{ single_data.mobile }}" placeholder="Enter your mobile">
             </div>
+            
+            <label for="gender">Gender:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="" value="Male" {% if single_data.gender == 'Male' %} checked {% endif %} >
+              <label class="form-check-label" for="Male">Male</label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="radio" name="gender" id="" value="Female" {% if single_data.gender == 'Female' %} checked {% endif %}>
+              <label class="form-check-label" for="Female">Female</label>
+            </div>
+            
+            <label for="hobbies">Hobbies:</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="hobbies" value="Cricket" id="cricket" {% if 'Cricket' in single_data.hobbies  %} checked {% endif %} >
+              <label class="form-check-label" for="flexCheckDefault">Cricket</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="hobbies" value="Football" id="football" {% if 'Football' in single_data.hobbies  %} checked {% endif %} >
+              <label class="form-check-label" for="Football">Football</label>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" name="hobbies" value="Volleyball" id="volleyball" {% if 'Volleyball' in single_data.hobbies  %} checked {% endif %} >
+              <label class="form-check-label" for="Volleyball">Volleyball</label>
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="mobile" class="form-label">City:</label>
+              <select name="city" class="form-control" id="">
+                <option value="">Select</option>
+                <option value="Agra" {% if single_data.cityName == 'Agra' %} selected {% endif %} >Agra</option>
+                <option value="Banglore" {% if single_data.cityName == 'Banglore' %} selected {% endif %} >Banglore</option>
+                <option value="Ahmedabad" {% if single_data.cityName == 'Ahmedabad' %} selected {% endif %} >Ahemdabad</option>
+                <option value="Vadodara" {% if single_data.cityName == 'Vadodara' %} selected {% endif %} >Vadodara</option>
+              </select>
+            </div>
+
 
             <input type="hidden" name="uid" value="{{ single_data.id }}">
 

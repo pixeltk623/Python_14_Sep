@@ -24,7 +24,9 @@ def store(request):
 		gender = request.POST['gender']
 		hobby = request.POST.getlist('hobbies')
 		hobby = ','.join(hobby)
-	
+
+
+		
 		cityName = request.POST['city']
 		res = Crud(name=Name, email=Email, mobile = Mobile, gender=gender, hobbies=hobby, cityName=cityName)
 		res.save()
@@ -40,6 +42,23 @@ def update(request):
 	b.name = request.POST['name']
 	b.email = request.POST['email']
 	b.mobile = request.POST['mobile']
+
+	if request.POST['gender'] != '':
+		pass
+	else:
+		pass
+
+	if request.POST['hobbies'] != '':
+		pass
+	else:
+		pass
+
+	if request.POST['city'] != '':
+		pass
+	else:
+		pass
+
+
 	b.modified_date = datetime.datetime.now()
 	b.save()
 	messages.add_message(request, messages.INFO, 'User Updated')
