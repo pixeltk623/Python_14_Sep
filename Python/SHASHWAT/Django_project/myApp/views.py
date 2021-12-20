@@ -21,17 +21,32 @@ def store(request):
 		Name = request.POST['name']
 		Email = request.POST['email']
 		Mobile = request.POST['mobile']
-		gender = request.POST['gender']
-		hobby = request.POST.getlist('hobbies')
-		hobby = ','.join(hobby)
 
+		if 'gender' in request.POST:
+			gender = request.POST['gender']
+		else:
+			gender = ''
 
-		
-		cityName = request.POST['city']
-		res = Crud(name=Name, email=Email, mobile = Mobile, gender=gender, hobbies=hobby, cityName=cityName)
-		res.save()
-	messages.add_message(request, messages.INFO, 'New User Added')
-	return redirect('/')  
+		if 'hobbies' in request.POST:
+			hobby = request.POST.getlist('hobbies')
+			hobby = ','.join(hobby)
+		else:
+			hobby = ''
+
+		if 'city' in request.POST:
+			cityName = request.POST['city']
+		else:
+			cityName = ''
+
+		if Name != '' and Email !='' and Mobile !='' and cityName != '' and gender !='' and hobby != '' :
+			res = Crud(name=Name, email=Email, mobile = Mobile, gender=gender, hobbies=hobby, cityName=cityName)
+			res.save()
+			messages.add_message(request, messages.INFO, 'New User Added')
+			return redirect('/')  
+		else:
+			messages.add_message(request, messages.INFO, 'Error')
+			return redirect("/create")  
+
 
 def edit(request, id):
 	single_data = Crud.objects.get(pk=id)
@@ -39,30 +54,41 @@ def edit(request, id):
 
 def update(request):
 	b = Crud.objects.get(pk=request.POST['uid'])
-	b.name = request.POST['name']
-	b.email = request.POST['email']
-	b.mobile = request.POST['mobile']
 
-	if request.POST['gender'] != '':
-		pass
+	Name = request.POST['name']
+	Email = request.POST['email']
+	Mobile = request.POST['mobile']
+
+	if 'gender' in request.POST:
+		gender = request.POST['gender']
 	else:
-		pass
+		gender = ''
 
-	if request.POST['hobbies'] != '':
-		pass
+	if 'hobbies' in request.POST:
+		hobby = request.POST.getlist('hobbies')
+		hobby = ','.join(hobby)
 	else:
-		pass
+		hobby = ''
 
-	if request.POST['city'] != '':
-		pass
+	if 'city' in request.POST:
+		cityName = request.POST['city']
 	else:
-		pass
+		cityName = ''
 
-
-	b.modified_date = datetime.datetime.now()
-	b.save()
-	messages.add_message(request, messages.INFO, 'User Updated')
-	return redirect('/')    
+	if Name != '' and Email !='' and Mobile !='' and cityName != '' and gender !='' and hobby != '' :
+		b.name = Name
+		b.email = Email
+		b.mobile = Mobile
+		b.gender = gender
+		b.hobbies = hobby
+		b.cityName = cityName
+		b.modified_date = datetime.datetime.now()
+		b.save()
+		messages.add_message(request, messages.INFO, 'User Updated')
+		return redirect('/')
+	else: 
+		messages.add_message(request, messages.INFO, 'Error')
+		return redirect('/edit')  
 
 def show(request,id):
 	single_data = Crud.objects.get(pk=id)

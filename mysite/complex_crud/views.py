@@ -32,6 +32,7 @@ def store(request):
 		else:
 			hobby = ''
 		city = request.POST['city']
+		
 		if name != '' and email !='' and mobile !='' and city != '' and gender !='' and hobby != '':
 			res = Complex(name=name,email=email,mobile=mobile,gender=gender,hobby=hobby,city=city)
 			res.save()
