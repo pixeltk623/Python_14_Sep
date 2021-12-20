@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('polls.urls')),
     path('simple_crud/', include('simple_crud.urls')),
+    path('complex_crud/', include('complex_crud.urls')),
 ]
