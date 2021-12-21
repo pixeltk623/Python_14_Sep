@@ -16,6 +16,13 @@
 
     <div class="container mt-4">
       <a href="/" class="btn btn-warning mt-3 mb-3">Back to Home</a>
+      {% if messages %}
+      <div class="alert alert-success">
+        {% for message in messages %}
+          {{ message }}
+              {% endfor %}
+        </div>
+        {% endif %}
       <div class="card">
         
         <div class="card-header">
