@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('polls.urls')),
     path('simple_crud/', include('simple_crud.urls')),
     path('complex_crud/', include('complex_crud.urls')),
+    path('file-upload/', include('FileUpload.urls')),
 ]

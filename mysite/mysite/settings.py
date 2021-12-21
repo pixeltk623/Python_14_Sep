@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'polls',
     'simple_crud',
     'complex_crud',
+    'FileUpload',
 ]
 
 MIDDLEWARE = [
