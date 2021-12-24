@@ -8,6 +8,7 @@ class Crud(models.Model):
     gender = models.CharField(max_length=255, default=True)
     hobbies = models.CharField(max_length=255, default=True)
     cityName = models.CharField(max_length=255, default=True)
+    profile_pic = models.CharField(max_length=255,default=True) 
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
     

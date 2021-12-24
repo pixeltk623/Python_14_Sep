@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,6 +24,15 @@
 		 		<th>Name</th>
 		 		<td>{{ single_data.name }}</td>
 		 	</tr>
+			<tr>
+				<th>Profile Pic</th>
+				<td>{% if single_data.profile_pic %}
+					<img src="{% static '/upload/' %}{{ single_data.profile_pic }}" width="50">
+					{% else %}
+					<img src="{% static '/upload/' %}not-found.png" width="50">
+					{% endif %}
+				</td>
+			</tr>
 		 	<tr>
 		 		<th>Email</th>
 		 		<td>{{ single_data.email }}</td>

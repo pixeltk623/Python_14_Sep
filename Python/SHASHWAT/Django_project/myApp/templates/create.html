@@ -28,25 +28,29 @@
           <h1 class="text-center mt-3 mb-3">Add Details</h1>
         </div>
         <div class="container">
-          <form class="form-control mt-3 mb-4" action="store/" method="post">
+          <form class="form-control mt-3 mb-4" action="store/" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="form-group mb-3">
               <label for="Name" class="form-label">Name</label>
               <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
             </div>
+            
             <div class="form-group mb-3">
               <label for="email" class="form-label">E-mail</label>
               <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
             </div>
+
             <div class="form-group mb-3">
               <label for="mobile" class="form-label">Mobile Number</label>
               <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile">
             </div>
+
             <label for="gender">Gender:</label>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="gender" id="" value="Male">
               <label class="form-check-label" for="flexRadioDefault1">Male</label>
             </div>
+
             <div class="form-check mb-3">
               <input class="form-check-input" type="radio" name="gender" id="" value="Female">
               <label class="form-check-label" for="flexRadioDefault2">Female</label>
@@ -57,14 +61,17 @@
               <input class="form-check-input" type="checkbox" name="hobbies" value="Cricket" id="cricket">
               <label class="form-check-label" for="flexCheckDefault">Cricket</label>
             </div>
+
             <div class="form-check">
               <input class="form-check-input" type="checkbox" name="hobbies" value="Football" id="football" >
               <label class="form-check-label" for="Football">Football</label>
             </div>
+
             <div class="form-check mb-3">
               <input class="form-check-input" type="checkbox" name="hobbies" value="Volleyball" id="volleyball" >
               <label class="form-check-label" for="Volleyball">Volleyball</label>
             </div>
+
             <div class="form-group mb-3">
               <label for="mobile" class="form-label">City:</label>
               <select name="city" class="form-control" id="">
@@ -75,6 +82,12 @@
                 <option value="Vadodara">Vadodara</option>
               </select>
             </div>
+
+            <div class="form-control mb-3">
+              <label>Choose Profile Pic:  </label>
+              <input type="file" name="uploadFile" id="profile_pic" class="form-control-file" >
+            </div>
+
             <button type="submit" class="btn btn-primary mb-2" onclick="return checkPara()">Submit</button>
           </form>
         </div>
