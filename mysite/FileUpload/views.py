@@ -4,6 +4,7 @@ import time
 import os
 from .models import FileUpload
 
+
 # Create your views here.
 
 
@@ -18,11 +19,29 @@ def create(request):
 
 def store(request):
 	if request.method=='POST':
+		return HttpResponse(request.FILES['profile_pic'].size)
 		name = request.POST['name']
-		profile_pic = request.FILES['profile_pic']
-		splitText  = os.path.splitext(profile_pic.name)
-		fileName = str(int(time.time()))+splitText[1]
-		handle_uploaded_file(profile_pic, fileName)
+
+		if 'profile_pic' in request.FILES:
+			profile_pic  = request.FILES['profile_pic']
+			splitText  = os.path.splitext(profile_pic.name)
+			
+			ext = splitText[1].lower().replace('.', '')
+
+			if ext=='jpg' or ext=='png' or ext=='jpeg':
+				print("Valid")
+			else:
+				print("Not Valid")
+
+			print(profile_pic._size)
+
+
+			return HttpResponse("Hello")
+			fileName = str(int(time.time()))+splitText[1]
+			handle_uploaded_file(profile_pic, fileName)
+		else:
+			fileName = ''
+		
 		res = FileUpload(name=name,profile_pic=fileName)
 		res.save()
 		return redirect('/file-upload') 
@@ -40,3 +59,9 @@ def delete(request, id):
 	b.delete()
 	os.remove('FileUpload/static/upload/'+b.profile_pic)
 	return redirect('/file-upload')
+
+
+def fileUpload(request):
+	if request.method=='POST':
+		print(request.FILES['profile_pic'].size)
+	return render(request, 'fileUpload/file.html')

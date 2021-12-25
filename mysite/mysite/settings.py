@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'simple_crud',
     'complex_crud',
     'FileUpload',
+    'LoginSystem',
 ]
 
 MIDDLEWARE = [

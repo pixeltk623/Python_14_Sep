@@ -9,4 +9,6 @@ urlpatterns = [
     path('store/', views.store, name='store'),
     path('delete/<int:id>/', views.delete, name='delete'),
 
+    path('file', views.fileUpload, name='file_upload'),
+
 ]
