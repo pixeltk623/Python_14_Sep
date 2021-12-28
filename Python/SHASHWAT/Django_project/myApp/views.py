@@ -53,7 +53,7 @@ def store(request):
 			fileName = ''
 	
 
-		if Name != '' and Email !='' and Mobile !='' and cityName != '' and gender !='' and hobby != '':
+		if Name != '' and Email !='' and Mobile !='' and cityName != '' and gender !='' and hobby != '' :
 			res = Crud(name=Name, email=Email, mobile = Mobile, gender=gender, hobbies=hobby, cityName=cityName,profile_pic=fileName)
 			res.save()
 			messages.add_message(request, messages.INFO, 'New User Added')
