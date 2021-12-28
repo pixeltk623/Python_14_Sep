@@ -4,6 +4,8 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
 
+from .models import Place,Restaurant,Item,Menu
+
 # Create your views here.
 
 def register(request):
@@ -45,3 +47,32 @@ def validation(request):
 		else:
 			messages.warning(request, 'Wrong Input.')
 			return redirect('http://127.0.0.1:8000/Login-system/user-login/')
+
+
+
+def relation(request):
+	# p1 = Place(name='Ace Hardware', address='1013 N. Ashland')
+	# p1.save()
+	# r = Restaurant(place=p1, serves_hot_dogs=True, serves_pizza=False)
+	# r.save()
+
+	#print(r.place)
+	#p1 = Place.objects.get(pk=2)
+	# print(p1.address)
+	# allD = Restaurant.objects.all()
+	# print(allD)
+
+	#print(Place.objects.get(pk=1))
+
+	#allD = Place.objects.get(restaurant__place=p1)
+
+	#print(allD.serves_hot_dogs)
+
+	# c = Place.objects.get(pk=1)
+	# e = Restaurant.objects.get(name='Diesel')
+
+	p = Item.objects.get(menu_id=1).menu.name
+
+	print(p)
+
+	return HttpResponse("Hello")
