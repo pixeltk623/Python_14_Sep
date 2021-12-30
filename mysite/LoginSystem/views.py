@@ -71,8 +71,8 @@ def relation(request):
 	# c = Place.objects.get(pk=1)
 	# e = Restaurant.objects.get(name='Diesel')
 
-	p = Item.objects.get(menu_id=1).menu.name
+	# p = Item.objects.get(menu_id=1)
 
-	print(p)
+	# print(p.menu.name)
 
 	return HttpResponse("Hello")
